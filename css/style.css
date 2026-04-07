@@ -1,0 +1,117 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "PFAgoraSansPro";
+  src: url("../fonts/PFAgoraSansPro-Thin.eot");
+  src: url("../fonts/PFAgoraSansPro-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/PFAgoraSansPro-Thin.woff") format("woff"), url("../fonts/PFAgoraSansPro-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PFAgoraSansPro";
+  color: red;
+  src: url("../fonts/PFAgoraSansPro-Light.eot");
+  src: url("../fonts/PFAgoraSansPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/PFAgoraSansPro-Light.woff") format("woff"), url("../fonts/PFAgoraSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PFAgoraSansPro";
+  src: url("../fonts/PFAgoraSansPro-Bold.eot");
+  src: url("../fonts/PFAgoraSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PFAgoraSansPro-Bold.woff") format("woff"), url("../fonts/PFAgoraSansPro-Bold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+.main-bg {
+  background-color: rgb(246, 246, 217);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.line {
+  height: 2px;
+  background-color: black;
+  width: 95%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header {
+  font-family: "PFAgoraSansPro";
+  font-weight: 300;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+.header__container__pages__item {
+  padding-right: 50px;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 5%;
+}
+
+.main {
+  font-family: "PFAgoraSansPro";
+  font-weight: 500;
+}
+.main__logo {
+  padding: 19px 15px;
+}
+.main__title {
+  padding-left: 15px;
+  width: 820px;
+  font-size: 64px;
+  white-space: pre-wrap;
+  padding-bottom: 150px;
+}/*# sourceMappingURL=style.css.map */

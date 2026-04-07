@@ -1,0 +1,17 @@
+.main{
+   font-family: "PFAgoraSansPro";
+   font-weight: 500;
+   
+   &__logo{
+      padding: 19px 15px;
+   }
+   &__title{
+      padding-left: 15px;
+      
+      width: 820px;
+      font-size: 64px;
+      white-space: pre-wrap;
+      padding-bottom: 150px;
+   }
+
+}

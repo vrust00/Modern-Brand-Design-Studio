@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'PFAgoraSansPro';
+    src: url('../fonts/PFAgoraSansPro-Thin.eot');
+    src: url('../fonts/PFAgoraSansPro-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFAgoraSansPro-Thin.woff') format('woff'),
+    url('../fonts/PFAgoraSansPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    }
+
+
+@font-face {
+    font-family: 'PFAgoraSansPro';
+    color:red;
+    src: url('../fonts/PFAgoraSansPro-Light.eot');
+    src: url('../fonts/PFAgoraSansPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFAgoraSansPro-Light.woff') format('woff'),
+    url('../fonts/PFAgoraSansPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    }
+
+
+@font-face {
+    font-family: 'PFAgoraSansPro';
+    src: url('../fonts/PFAgoraSansPro-Bold.eot');
+    src: url('../fonts/PFAgoraSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFAgoraSansPro-Bold.woff') format('woff'),
+    url('../fonts/PFAgoraSansPro-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    }
