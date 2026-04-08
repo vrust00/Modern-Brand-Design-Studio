@@ -53,21 +53,24 @@ table {
   src: url("../fonts/PFAgoraSansPro-Thin.eot");
   src: url("../fonts/PFAgoraSansPro-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/PFAgoraSansPro-Thin.woff") format("woff"), url("../fonts/PFAgoraSansPro-Thin.ttf") format("truetype");
   font-weight: 100;
-  font-style: normal;
 }
 @font-face {
   font-family: "PFAgoraSansPro";
   src: url("../fonts/PFAgoraSansPro-Light.eot");
   src: url("../fonts/PFAgoraSansPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/PFAgoraSansPro-Light.woff") format("woff"), url("../fonts/PFAgoraSansPro-Light.ttf") format("truetype");
   font-weight: 300;
-  font-style: normal;
+}
+@font-face {
+  font-family: "PFAgoraSansPro";
+  src: url("../fonts/PFAgoraSansPro-Medium.eot");
+  src: url("../fonts/PFAgoraSansPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/PFAgoraSansPro-Medium.woff") format("woff"), url("../fonts/PFAgoraSansPro-Medium.ttf") format("truetype");
+  font-weight: 400;
 }
 @font-face {
   font-family: "PFAgoraSansPro";
   src: url("../fonts/PFAgoraSansPro-Bold.eot");
   src: url("../fonts/PFAgoraSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PFAgoraSansPro-Bold.woff") format("woff"), url("../fonts/PFAgoraSansPro-Bold.ttf") format("truetype");
   font-weight: 500;
-  font-style: normal;
 }
 .main-bg {
   background-color: rgb(246, 246, 217);
@@ -159,4 +162,97 @@ table {
 .portfolio__description {
   width: 316px;
   margin-right: 30px;
+}
+
+.stats {
+  font-family: "PFAgoraSansPro";
+  font-weight: 400;
+  padding-left: 15px;
+  padding-top: 20px;
+  position: relative;
+}
+.stats__container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25vw;
+}
+.stats__slogan {
+  font-size: 30px;
+  width: 325px;
+}
+.stats__num {
+  font-size: 105px;
+  padding-bottom: 25px;
+}
+.stats__item {
+  padding-bottom: 20px;
+}
+.stats__line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: absolute;
+  width: calc(100vw - (25vw + 325px + 47px));
+  height: 1px;
+  background-color: black;
+  right: 15px;
+}
+.stats__link {
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  margin-top: 73px;
+  text-align: left;
+  margin-bottom: 30px;
+  color: rgb(70, 70, 70);
+}
+
+.contacts {
+  font-family: "PFAgoraSansPro";
+  font-weight: 300;
+  color: black;
+}
+.contacts .line {
+  margin: auto 30px;
+}
+.contacts__title {
+  padding: 34px 30px;
+  font-size: 37px;
+}
+.contacts__container {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 4fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 30px;
+}
+.contacts__logo {
+  height: 70px;
+  grid-area: 1/1/1/1;
+}
+.contacts__vector-logo {
+  margin: auto 15px;
+  width: 98vw;
+  padding-bottom: 15px;
+}
+.contacts .info {
+  padding-bottom: 10px;
+}
+.contacts__item {
+  width: 201px;
+  font-size: 20px;
+}
+.contacts .title {
+  padding-bottom: 30px;
+}
+.contacts .contacts {
+  grid-row: 2;
+  grid-column: 2;
+}
+.contacts .office {
+  grid-row: 1;
+  grid-column: 2;
+}
+.contacts .social {
+  grid-row: 1;
+  grid-column: 3;
 }/*# sourceMappingURL=style.css.map */

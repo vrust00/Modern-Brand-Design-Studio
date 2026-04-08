@@ -1,0 +1,56 @@
+.stats {
+   font-family: "PFAgoraSansPro";
+   font-weight: 400;
+   padding-left: 15px;
+   padding-top: 20px;
+   position: relative;
+   &__container{
+      display: flex;
+      justify-content: flex-start;
+      
+      gap:25vw;
+   }
+
+   &__slogan{
+      
+      font-size: 30px;
+      width: 325px;
+      
+   }
+
+   &__num {
+      font-size: 105px;
+      padding-bottom: 25px;
+      
+   }
+
+
+   &__item{
+      padding-bottom: 20px;
+      
+      
+   }
+
+
+   &__line{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      position: absolute;
+      width: calc(100vw - (25vw + 325px + 47px));
+      height: 1px;
+      background-color: black;
+      right: 15px;
+      
+      
+   }
+
+   &__link{
+      text-decoration: none;
+      display: block;
+      font-size: 20px;
+      margin-top: 73px;
+      text-align: left;
+      margin-bottom: 30px;
+      color: rgb(70, 70, 70);
+   }
+}
