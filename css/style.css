@@ -77,7 +77,8 @@ table {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .line {
@@ -85,22 +86,6 @@ table {
   background-color: black;
   text-align: center;
   margin: 0 15px;
-}
-
-.header {
-  font-family: "PFAgoraSansPro";
-  font-weight: 300;
-}
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 20px;
-}
-.header__container__pages__item {
-  padding-right: 50px;
-  color: black;
-  text-decoration: none;
-  letter-spacing: 5%;
 }
 
 @keyframes spin {
@@ -111,6 +96,48 @@ table {
     transform: rotate(360deg);
   }
 }
+.header {
+  font-family: "PFAgoraSansPro";
+  font-weight: 300;
+  color: black;
+}
+.header__hidden {
+  display: none;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+.header__container__pages__item {
+  color: black;
+  padding-right: 50px;
+  text-decoration: none;
+  letter-spacing: 5%;
+}
+@media (max-width: 799px) {
+  .header__hidden {
+    display: flex;
+    padding-left: 10px;
+  }
+  .header__hidden__logo {
+    padding-right: 1px;
+    width: 5%;
+  }
+  .header__hidden__logo:nth-child(2) {
+    animation: spin 2s ease-in-out infinite;
+  }
+  .header__hidden__menu {
+    text-decoration: none;
+    margin-left: 220px;
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  .header__container__pages {
+    display: none;
+  }
+}
+
 .main {
   font-family: "PFAgoraSansPro";
   font-weight: 500;
@@ -124,10 +151,14 @@ table {
 .main__logo:last-child {
   animation: spin 2s ease-in-out infinite;
 }
+@media (max-width: 799px) {
+  .main__logo {
+    display: none;
+  }
+}
 .main__title {
   padding-left: 15px;
-  width: 820px;
-  font-size: 64px;
+  font-size: clamp(32px, 12vw, 48px);
   white-space: pre-wrap;
   padding-bottom: 150px;
 }
@@ -152,7 +183,7 @@ table {
   padding-bottom: 60px;
 }
 .portfolio__images {
-  margin: auto 15px;
+  margin: auto 30px;
   display: flex;
   justify-content: space-between;
   padding-right: 15px;
@@ -165,7 +196,7 @@ table {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  padding-left: 15px;
+  padding-left: 30px;
 }
 .portfolio__project-name {
   word-spacing: 20px;
@@ -176,6 +207,23 @@ table {
 .portfolio__description {
   width: 316px;
   margin-right: 30px;
+}
+@media (max-width: 799px) {
+  .portfolio__image {
+    height: 40vh;
+  }
+  .portfolio__project {
+    padding-top: 10px;
+  }
+  .portfolio__link {
+    left: 30px;
+  }
+  .portfolio__info {
+    display: block;
+  }
+  .portfolio__project-slogan {
+    margin-bottom: 32px;
+  }
 }
 
 .stats {
@@ -192,7 +240,6 @@ table {
 }
 .stats__slogan {
   font-size: 30px;
-  width: 325px;
 }
 .stats__num {
   font-size: 105px;
@@ -200,15 +247,12 @@ table {
 }
 .stats__item {
   padding-bottom: 20px;
+  width: 49vw;
 }
 .stats__line {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  position: absolute;
   width: 100%;
   height: 1px;
   background-color: black;
-  right: 15px;
 }
 .stats__link {
   text-decoration: none;
@@ -218,6 +262,14 @@ table {
   text-align: left;
   margin-bottom: 30px;
   color: rgb(70, 70, 70);
+}
+@media (max-width: 799px) {
+  .stats__container {
+    display: block;
+  }
+  .stats__slogan {
+    padding-bottom: 80px;
+  }
 }
 
 .contacts {
@@ -246,9 +298,8 @@ table {
   animation: spin 2s ease-in-out infinite;
 }
 .contacts__vector-logo {
-  margin: auto 20px;
-  width: 97%;
-  padding-bottom: 15px;
+  width: calc(100% - 30px);
+  margin: 15px 15px;
 }
 .contacts .info {
   padding-bottom: 10px;
@@ -271,4 +322,12 @@ table {
 .contacts .social {
   grid-row: 1;
   grid-column: 3;
+}
+@media (max-width: 799px) {
+  .contacts__container {
+    display: block;
+  }
+  .contacts__item {
+    padding-bottom: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */

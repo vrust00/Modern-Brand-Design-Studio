@@ -32,21 +32,25 @@
 
 
       &__vector-logo{
+         width: calc(100% - 30px);
+         margin: 15px 15px;
          
-         margin: auto 20px;
-         width: 97%;
-         padding-bottom: 15px;
+         
 
       }
 
       .info {
          padding-bottom: 10px;
+         
       }
 
       &__item {
          
          width: 201px;
          font-size: 20px;
+         
+         
+         
          
       }
 
@@ -66,6 +70,17 @@
       .social {
          grid-row: 1;
          grid-column: 3;
+      }
+
+      @media (max-width: 799px) {
+         &__container {
+            display: block;
+         }
+
+         &__item {
+            padding-bottom: 50px;
+         }
+
       }
    }
    

@@ -24,7 +24,7 @@
    }
 
    &__images {
-      margin: auto 15px;
+      margin: auto 30px;
       display: flex;
       justify-content: space-between;
       padding-right: 15px;
@@ -38,14 +38,14 @@
       
       
       height: 70vh;
-      
+
    }
 
    &__info {
       display: flex;
       justify-content: space-between;
       padding-top: 20px;
-      padding-left: 15px;
+      padding-left: 30px;
    }
 
    &__project-name {
@@ -61,5 +61,33 @@
       margin-right: 30px;
    }
 
-   
+   @media (max-width: 799px) {
+         
+      &__image{
+         height: 40vh;
+
+      }
+
+      &__project {
+      
+         padding-top: 10px;
+         
+         
+      }
+
+      &__link{
+         left:30px;
+      }
+
+      &__info{
+         display: block;
+         
+      }
+      
+      &__project-slogan {
+         margin-bottom: 32px;
+      }
+  
+      
+   }
 }

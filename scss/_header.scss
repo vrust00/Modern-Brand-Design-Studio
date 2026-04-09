@@ -1,7 +1,21 @@
+@keyframes spin {
+         0% { transform: rotate(0deg); }
+         100% { transform: rotate(360deg); }
+}
+
+
+
 .header {
    font-family: "PFAgoraSansPro";
    font-weight: 300;
+   color: black;
+
+   &__hidden{
+      display: none;
+   }
    
+
+
    &__container{
       
       display: flex;
@@ -14,14 +28,47 @@
          
          
          &__item{
-            padding-right: 50px;
             color: black;
+            padding-right: 50px;
+            
             text-decoration: none;
             letter-spacing: 5%;
          }
 
 
       }
+   }
+
+   @media (max-width: 799px) {
+      
+      &__hidden{
+         display: flex;
+         padding-left: 10px;  
+         
+         &__logo{
+            padding-right: 1px;
+            width: 5%;
+            
+         }
+
+         &__logo:nth-child(2){
+               animation: spin 2s ease-in-out infinite;
+            }
+
+         
+
+         &__menu {
+            
+            text-decoration: none;
+            margin-left:220px;
+            margin-top: 5px;
+            font-size: 20px;
+         }
+      }
+      &__container__pages{
+         display: none;
+      }
+
    }
 
 

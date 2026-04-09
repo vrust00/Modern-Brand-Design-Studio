@@ -1,18 +1,16 @@
 .main-bg{
    background-color: rgb(246, 246, 217);
-   
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   width: 100%;
-
+   max-width: 100%;
+   overflow-x: hidden;
 }
 
 .line{
-      
       height: 2px;
       background-color: black;
-
       text-align: center;
       margin: 0 15px;
    }
+
