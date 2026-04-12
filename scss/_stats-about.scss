@@ -1,0 +1,72 @@
+.stats-about {
+   font-family: "PFAgoraSansPro";
+   font-weight: 400;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   position: relative;
+   &__description{
+      display: flex;
+      justify-content: center;
+      height: 246px;
+   }
+
+   &__slogan{
+
+      font-size: 30px;
+      
+
+      
+   }
+
+   &__num {
+      font-size: 105px;
+      padding-bottom: 25px;
+      
+   }
+
+
+   &__item{
+      text-align: center;
+      padding-bottom: 20px;
+      width: calc(100vw / 3);
+      
+      
+   }
+
+
+   &__line{
+      
+      width: 1px;
+      
+      height: 100%;
+      background-color: black;
+      
+
+      
+      
+   }
+
+   &__link{
+      text-decoration: none;
+      display: block;
+      font-size: 20px;
+      margin-top: 73px;
+      text-align: left;
+      margin-bottom: 30px;
+      color: rgb(70, 70, 70);
+   }
+
+
+   @media (max-width: 799px) {
+      &__container{
+         display:block;
+
+      }
+
+      &__slogan{
+         padding-bottom: 80px;
+      }
+   }
+}

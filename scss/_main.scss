@@ -5,6 +5,12 @@
 .main{
    font-family: "PFAgoraSansPro";
    font-weight: 500;
+   
+   &__title{
+      width: 65vw;
+   }
+
+
    &__container{
       display: flex;
       padding: 19px 15px;

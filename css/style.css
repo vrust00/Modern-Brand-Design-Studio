@@ -157,6 +157,9 @@ table {
   font-family: "PFAgoraSansPro";
   font-weight: 500;
 }
+.main__title {
+  width: 65vw;
+}
 .main__container {
   display: flex;
   padding: 19px 15px;
@@ -503,5 +506,54 @@ table {
   }
   .other-projects__project {
     margin-bottom: 20px;
+  }
+}
+
+.stats-about {
+  font-family: "PFAgoraSansPro";
+  font-weight: 400;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.stats-about__description {
+  display: flex;
+  justify-content: center;
+  height: 246px;
+}
+.stats-about__slogan {
+  font-size: 30px;
+}
+.stats-about__num {
+  font-size: 105px;
+  padding-bottom: 25px;
+}
+.stats-about__item {
+  text-align: center;
+  padding-bottom: 20px;
+  width: 33.3333333333vw;
+}
+.stats-about__line {
+  width: 1px;
+  height: 100%;
+  background-color: black;
+}
+.stats-about__link {
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  margin-top: 73px;
+  text-align: left;
+  margin-bottom: 30px;
+  color: rgb(70, 70, 70);
+}
+@media (max-width: 799px) {
+  .stats-about__container {
+    display: block;
+  }
+  .stats-about__slogan {
+    padding-bottom: 80px;
   }
 }/*# sourceMappingURL=style.css.map */
