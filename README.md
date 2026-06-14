@@ -1,14 +1,7 @@
 # Многостраничный сайт студии дизайна «Frame & Form»
 
-**Главная страница**  
-![Главная](images/screenshot_main.png)
-
-**Страница проекта**  
-![Проект](images/screenshot_project.png)
-
-**Страница О студии**  
-![О студии](images/screenshot_about.png)
-
+**Главная страница/Страница проекта/Страница О Студии**  
+![Сайт](images/screenshot.png)
 
 ##  Посмотреть сайт
 **[Открыть демо](https://vrust00.github.io/Modern-Brand-Design-Studio/)**
