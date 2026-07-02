@@ -339,7 +339,7 @@ table {
   color: rgb(70, 70, 70);
 }
 @media (max-width: 799px) {
-  .stats__container {
+  .stats__wrapper {
     display: block;
   }
   .stats__slogan {
